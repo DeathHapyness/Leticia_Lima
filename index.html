@@ -64,8 +64,9 @@
 
       .nav-container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 1rem 2rem;
         max-width: 1200px;
         margin: 0 auto;
@@ -75,12 +76,16 @@
         color: #ff6b35;
         font-weight: 700;
         font-size: 1.8rem;
+        margin-bottom: 0.5rem;
       }
 
       .nav-menu {
         display: flex;
         list-style: none;
         gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
       }
 
       .nav-link {
@@ -1123,6 +1128,8 @@
           transition: 0.3s;
           box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
           padding: 2rem 0;
+          align-items: center;
+          justify-content: center;
         }
 
         .nav-menu.active {
@@ -1131,6 +1138,10 @@
 
         .nav-menu li {
           margin: 1rem 0;
+        }
+        .nav-container {
+          flex-direction: column;
+          align-items: center;
         }
 
         .hero {
@@ -1593,7 +1604,6 @@
                 </p>
                 <a
                   href="patins-transformando-vidas/index.html"
-                  target="_blank"
                   class="cta-button"
                   style="margin-top: 1.5rem"
                   >Acessar Projeto</a
@@ -1750,28 +1760,28 @@
 
       const galleryData = [
         {
-          src: 'competicao1.png',
+          src: 'patins-transformando-vidas/assets/images/equipment/competicao1.png',
           title: 'Primeira Competição',
           description: 'Minha primeira participação em um campeonato oficial',
         },
         {
-          src: 'images/medalha.png',
+          src: 'patins-transformando-vidas/assets/images/equipment/medalha.png',
           title: 'Primeira Medalha',
           description: 'O momento da conquista da minha primeira medalha',
         },
         {
-          src: 'images/entrevista.png',
+          src: 'patins-transformando-vidas/assets/images/equipment/entrevista.png',
           title: 'Entrevista na Revista',
           description:
             'Primeira entrevista para uma revista especializada em patins',
         },
         {
-          src: 'assets/images/treino_Salto.jpg',
+          src: 'patins-transformando-vidas/assets/images/equipment/treino_Salto.jpg',
           title: 'Treino em Salto',
           description: 'Momento especial durante treino em Salto/SP',
         },
         {
-          src: 'assets/images/treino_street.jpg',
+          src: 'patins-transformando-vidas/assets/images/equipment/treino_street.jpg',
           title: 'Treino Street Avançado',
           description: 'Aperfeiçoamento das técnicas de street skating',
         },
@@ -1850,13 +1860,15 @@
 
       const equipmentData = [
         {
-          image: 'patins_street.jpg',
+          image:
+            'patins-transformando-vidas/assets/images/equipment/patins_street.jpg',
           title: 'Patins Street',
           description:
             'Meus patins principais para street skating, ideais para manobras e velocidade.',
         },
         {
-          image: 'treino_street.jpg',
+          image:
+            'patins-transformando-vidas/assets/images/equipment/treino_street.jpg',
           title: 'Equipamento de Treino',
           description: 'Capacetes,joelheiras,coloeveiras e etc todos.',
         },
