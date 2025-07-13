@@ -35,8 +35,8 @@
       body {
         font-family: 'Roboto', sans-serif;
         line-height: 1.4;
-        color: #ffffff;
-        background: #000000;
+        color: #222;
+        background: #f6faff;
         overflow-x: hidden;
         position: relative;
       }
@@ -52,23 +52,23 @@
         background: linear-gradient(
             45deg,
             transparent 40%,
-            rgba(0, 191, 255, 0.05) 45%,
+            rgba(0, 191, 255, 0.08) 45%,
             transparent 50%
           ),
           linear-gradient(
             -45deg,
             transparent 40%,
-            rgba(0, 150, 255, 0.03) 45%,
+            rgba(0, 150, 255, 0.06) 45%,
             transparent 50%
           ),
-          radial-gradient(circle at 20% 30%, #111111 0%, transparent 60%),
-          radial-gradient(circle at 80% 70%, #0a0a0a 0%, transparent 60%),
+          radial-gradient(circle at 20% 30%, #eaf6ff 0%, transparent 60%),
+          radial-gradient(circle at 80% 70%, #e3f0fa 0%, transparent 60%),
           linear-gradient(
             90deg,
-            rgba(0, 191, 255, 0.1) 0px,
+            rgba(0, 191, 255, 0.13) 0px,
             transparent 1px,
             transparent 20px,
-            rgba(0, 120, 255, 0.1) 21px,
+            rgba(0, 120, 255, 0.13) 21px,
             transparent 22px,
             transparent 40px
           );
@@ -106,18 +106,18 @@
         background: repeating-linear-gradient(
             90deg,
             transparent 0px,
-            rgba(255, 255, 255, 0.008) 1px,
+            rgba(0, 191, 255, 0.03) 1px,
             transparent 2px
           ),
           repeating-linear-gradient(
             0deg,
             transparent 0px,
-            rgba(255, 255, 255, 0.005) 1px,
+            rgba(0, 191, 255, 0.02) 1px,
             transparent 3px
           );
         pointer-events: none;
         z-index: -1;
-        opacity: 0.6;
+        opacity: 0.3;
       }
 
       .container {
@@ -128,15 +128,15 @@
 
       /* Header Navigation - Street Style */
       .nav-header {
-        background: rgba(0, 0, 0, 0.95);
-        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(12px);
         border-bottom: 3px solid transparent;
         border-image: linear-gradient(90deg, #00bfff, #0078ff, #00bfff) 1;
         position: sticky;
         top: 0;
         z-index: 1000;
-        box-shadow: 0 4px 30px rgba(0, 191, 255, 0.3),
-          0 0 50px rgba(0, 120, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 191, 255, 0.08),
+          0 0 50px rgba(0, 120, 255, 0.05);
         position: relative;
         animation: rgbBluePulse 4s ease-in-out infinite;
       }
@@ -246,7 +246,7 @@
 
       .nav-link {
         text-decoration: none;
-        color: #cccccc;
+        color: #0078ff;
         font-family: 'Barlow Condensed', sans-serif;
         font-weight: 600;
         font-size: 1.1rem;
@@ -263,26 +263,25 @@
         color: #00bfff;
         border-color: #0078ff;
         transform: translateY(-3px) rotate(1deg);
-        text-shadow: 0 0 15px rgba(0, 191, 255, 0.8),
-          0 0 30px rgba(0, 120, 255, 0.5);
+        text-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
         background: linear-gradient(
           45deg,
-          rgba(0, 191, 255, 0.1),
-          rgba(0, 150, 255, 0.1)
+          rgba(0, 191, 255, 0.08),
+          rgba(0, 150, 255, 0.08)
         );
-        box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3),
-          inset 0 0 20px rgba(0, 120, 255, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 191, 255, 0.08),
+          inset 0 0 10px rgba(0, 120, 255, 0.05);
       }
 
       /* Hero Section - Street Style */
       .hero {
         background: linear-gradient(
           135deg,
-          #000000 0%,
-          #1a1a1a 50%,
-          #000000 100%
+          #eaf6ff 0%,
+          #f6faff 50%,
+          #eaf6ff 100%
         );
-        color: white;
+        color: #1a1a1a;
         padding: 80px 0 60px;
         text-align: center;
         position: relative;
@@ -324,6 +323,7 @@
         z-index: 2;
         max-width: 900px;
         margin: 0 auto;
+        color: #1a1a1a;
       }
 
       .hero h1 {
@@ -334,16 +334,14 @@
         line-height: 0.9;
         text-transform: uppercase;
         letter-spacing: 4px;
-        background: linear-gradient(45deg, #ffffff, #00bfff, #0078ff, #ffffff);
+        background: linear-gradient(45deg, #0078ff, #00bfff, #0078ff, #ffffff);
         background-size: 400% 400%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        animation: gradientShift 3s ease-in-out infinite,
-          rgbBlueGlow 2s ease-in-out infinite alternate;
-        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9),
-          6px 6px 15px rgba(0, 191, 255, 0.4), 0 0 30px rgba(0, 150, 255, 0.3),
-          0 0 50px rgba(0, 191, 255, 0.2);
+        animation: gradientShift 3s ease-in-out infinite;
+        text-shadow: 2px 2px 0px rgba(0, 191, 255, 0.1),
+          0 0 10px rgba(0, 191, 255, 0.08);
         position: relative;
         z-index: 3;
       }
@@ -362,7 +360,7 @@
         background-clip: text;
         animation: glitch 4s infinite;
         z-index: -1;
-        opacity: 0.3;
+        opacity: 0.12;
       }
 
       @keyframes glitch {
@@ -445,7 +443,7 @@
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 1.4rem;
         font-weight: 500;
-        color: #cccccc;
+        color: #0078ff;
         margin-bottom: 2.5rem;
         line-height: 1.4;
         text-transform: uppercase;
@@ -454,26 +452,25 @@
 
       .cta-button {
         display: inline-block;
-        background: linear-gradient(45deg, #00bfff, #0078ff, #00bfff);
+        background: linear-gradient(45deg, #ffffff, #eaf6ff, #00bfff 80%);
         background-size: 300% 300%;
-        color: #ffffff;
+        color: #0078ff;
         padding: 18px 40px;
         text-decoration: none;
-        border-radius: 0;
+        border-radius: 30px;
         font-family: 'Bebas Neue', cursive;
         font-weight: 400;
         font-size: 1.3rem;
         text-transform: uppercase;
         letter-spacing: 2px;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 20px rgba(0, 191, 255, 0.4),
-          inset 0 0 0 2px rgba(255, 255, 255, 0.1),
-          0 0 30px rgba(0, 120, 255, 0.3);
+        box-shadow: 0 4px 20px rgba(0, 191, 255, 0.08),
+          inset 0 0 0 2px rgba(0, 191, 255, 0.08),
+          0 0 30px rgba(0, 120, 255, 0.05);
         position: relative;
         overflow: hidden;
-        animation: buttonGlow 4s ease-in-out infinite,
-          rgbBlueShift 3s ease-in-out infinite;
-        border: 2px solid transparent;
+        animation: buttonGlow 4s ease-in-out infinite;
+        border: 2px solid #00bfff;
       }
 
       @keyframes buttonGlow {
@@ -514,18 +511,19 @@
 
       .cta-button:hover {
         transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 10px 40px rgba(0, 191, 255, 0.6),
-          inset 0 0 0 2px rgba(255, 255, 255, 0.3),
-          0 0 50px rgba(0, 150, 255, 0.5);
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        box-shadow: 0 10px 40px rgba(0, 191, 255, 0.13),
+          inset 0 0 0 2px rgba(0, 191, 255, 0.13),
+          0 0 50px rgba(0, 150, 255, 0.08);
+        text-shadow: 0 0 10px rgba(0, 191, 255, 0.13);
         animation: none;
-        background: linear-gradient(45deg, #0078ff, #00bfff, #0078ff);
+        background: linear-gradient(45deg, #eaf6ff, #00bfff, #eaf6ff);
+        color: #0078ff;
       }
 
       /* Hero Image */
       .hero-image {
         padding: 60px 0;
-        background: #111111;
+        background: #eaf6ff;
         border-top: 3px solid #00bfff;
         border-bottom: 3px solid #00bfff;
       }
@@ -534,37 +532,38 @@
         max-width: 100%;
         height: auto;
         border-radius: 0;
-        box-shadow: 0 0 30px rgba(0, 191, 255, 0.3),
-          inset 0 0 0 3px rgba(0, 191, 255, 0.5);
+        box-shadow: 0 0 30px rgba(0, 191, 255, 0.08),
+          inset 0 0 0 3px rgba(0, 191, 255, 0.13);
         display: block;
         margin: 0 auto;
-        filter: contrast(1.1) brightness(1.1);
+        filter: contrast(1.05) brightness(1.05);
       }
 
       /* Main Content Sections - Street Style */
       .section {
         padding: 80px 0;
         position: relative;
+        background: #f6faff;
       }
 
       .section-alt {
-        background: #0a0a0a;
-        border-top: 1px solid #333333;
-        border-bottom: 1px solid #333333;
+        background: #eaf6ff;
+        border-top: 1px solid #b3e0ff;
+        border-bottom: 1px solid #b3e0ff;
       }
 
       .section-title {
         font-family: 'Anton', sans-serif;
         font-size: 3.2rem;
         font-weight: 400;
-        color: #ffffff;
+        color: #0078ff;
         text-align: center;
         margin-bottom: 1rem;
         line-height: 1.1;
         text-transform: uppercase;
         letter-spacing: 3px;
-        text-shadow: 2px 2px 0px rgba(0, 191, 255, 0.8),
-          4px 4px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 150, 255, 0.4);
+        text-shadow: 2px 2px 0px rgba(0, 191, 255, 0.2),
+          0 0 10px rgba(0, 191, 255, 0.08);
         position: relative;
         animation: rgbBluePulse 3s ease-in-out infinite;
       }
@@ -579,6 +578,7 @@
         height: 3px;
         background: linear-gradient(90deg, #00bfff, #0078ff, #00bfff);
         animation: underlineGlow 2s ease-in-out infinite;
+        opacity: 0.7;
       }
 
       @keyframes underlineGlow {
@@ -597,7 +597,7 @@
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 1.3rem;
         font-weight: 500;
-        color: #cccccc;
+        color: #0078ff;
         text-align: center;
         margin-bottom: 4rem;
         max-width: 700px;
@@ -615,15 +615,15 @@
 
       .text-content p {
         font-size: 1.1rem;
-        color: #dddddd;
+        color: #222;
         margin-bottom: 2rem;
         font-weight: 400;
       }
 
       .highlight {
-        color: #00bfff;
+        color: #0078ff;
         font-weight: 600;
-        text-shadow: 0 0 5px rgba(0, 191, 255, 0.3);
+        text-shadow: 0 0 5px rgba(0, 191, 255, 0.1);
       }
 
       /* Benefits Grid - Street Style */
@@ -635,7 +635,7 @@
       }
 
       .benefit-card {
-        background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+        background: linear-gradient(135deg, #f6faff 0%, #eaf6ff 100%);
         padding: 40px 30px;
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
@@ -644,8 +644,8 @@
         transition: all 0.4s ease;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5),
-          inset 0 0 0 1px rgba(0, 191, 255, 0.1);
+        box-shadow: 0 8px 30px rgba(0, 191, 255, 0.08),
+          inset 0 0 0 1px rgba(0, 191, 255, 0.05);
         animation: rgbBlueCardGlow 5s ease-in-out infinite;
       }
 
@@ -773,7 +773,7 @@
         font-family: 'Bebas Neue', cursive;
         font-size: 1.6rem;
         font-weight: 400;
-        color: #ffffff;
+        color: #0078ff;
         margin-bottom: 16px;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -781,7 +781,7 @@
 
       .benefit-card p {
         font-size: 1rem;
-        color: #cccccc;
+        color: #222;
         line-height: 1.6;
         font-weight: 400;
       }
@@ -790,11 +790,11 @@
       .quote-section {
         background: linear-gradient(
             45deg,
-            rgba(0, 191, 255, 0.15) 0%,
-            rgba(0, 150, 255, 0.1) 50%,
+            rgba(0, 191, 255, 0.08) 0%,
+            rgba(0, 150, 255, 0.06) 50%,
             transparent 100%
           ),
-          #000000;
+          #f6faff;
         padding: 100px 0;
         text-align: center;
         position: relative;
@@ -811,7 +811,7 @@
         left: 50%;
         transform: translateX(-50%);
         font-size: 15rem;
-        color: rgba(0, 191, 255, 0.1);
+        color: rgba(0, 191, 255, 0.08);
         font-family: 'Anton', sans-serif;
         z-index: 1;
         animation: quoteFloat 8s ease-in-out infinite;
@@ -863,7 +863,7 @@
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 2.2rem;
         font-weight: 600;
-        color: #ffffff;
+        color: #0078ff;
         font-style: italic;
         max-width: 800px;
         margin: 0 auto 2rem;
@@ -872,13 +872,13 @@
         z-index: 2;
         text-transform: uppercase;
         letter-spacing: 1px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 4px rgba(0, 191, 255, 0.08);
       }
 
       .quote-author {
         font-family: 'Bebas Neue', cursive;
         font-size: 1.2rem;
-        color: #00bfff;
+        color: #0078ff;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -888,8 +888,8 @@
 
       /* Footer - Street Style */
       .footer {
-        background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-        color: #cccccc;
+        background: linear-gradient(135deg, #eaf6ff 0%, #f6faff 100%);
+        color: #0078ff;
         padding: 60px 0 40px;
         text-align: center;
         border-top: 3px solid #00bfff;
@@ -903,16 +903,16 @@
       .footer-title {
         font-family: 'Anton', sans-serif;
         font-size: 2rem;
-        color: #00bfff;
+        color: #0078ff;
         margin-bottom: 20px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 4px rgba(0, 191, 255, 0.08);
       }
 
       .footer-description {
         font-size: 1rem;
-        color: #cccccc;
+        color: #222;
         margin-bottom: 30px;
         line-height: 1.6;
       }
@@ -920,10 +920,10 @@
       .footer-signature {
         font-family: 'Bebas Neue', cursive;
         font-size: 1.1rem;
-        color: #888888;
+        color: #0078ff;
         text-transform: uppercase;
         letter-spacing: 2px;
-        border-top: 1px solid #333333;
+        border-top: 1px solid #b3e0ff;
         padding-top: 20px;
       }
 
