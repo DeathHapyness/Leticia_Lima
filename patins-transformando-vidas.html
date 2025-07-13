@@ -1130,6 +1130,164 @@
       .benefit-card:hover h3 {
         text-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
       }
+
+      body.dark-mode {
+        background: #10131a;
+        color: #eaf6ff;
+      }
+      body.dark-mode .nav-header {
+        background: rgba(10, 18, 32, 0.97);
+        border-image: linear-gradient(90deg, #003366, #005fa3, #003366) 1;
+        box-shadow: 0 4px 30px rgba(0, 50, 100, 0.18),
+          0 0 50px rgba(0, 50, 100, 0.12);
+      }
+      body.dark-mode .nav-header::before {
+        background: repeating-linear-gradient(
+          90deg,
+          transparent 0px,
+          rgba(0, 80, 160, 0.13) 1px,
+          transparent 2px,
+          transparent 50px,
+          rgba(0, 50, 100, 0.13) 51px,
+          transparent 52px,
+          transparent 100px
+        );
+      }
+      body.dark-mode .nav-link {
+        color: #7ecbff;
+      }
+      body.dark-mode .nav-link:hover {
+        color: #00bfff;
+        border-color: #005fa3;
+        background: linear-gradient(
+          45deg,
+          rgba(0, 80, 160, 0.18),
+          rgba(0, 50, 100, 0.18)
+        );
+      }
+      body.dark-mode .logo-text {
+        color: #00bfff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+      }
+      body.dark-mode .hero {
+        background: linear-gradient(
+          135deg,
+          #10131a 0%,
+          #1a2333 50%,
+          #10131a 100%
+        );
+        color: #eaf6ff;
+      }
+      body.dark-mode .hero-image {
+        background: #181f2a;
+        border-top: 3px solid #005fa3;
+        border-bottom: 3px solid #005fa3;
+      }
+      body.dark-mode .section {
+        background: #181f2a;
+      }
+      body.dark-mode .section-alt {
+        background: #10131a;
+        border-top: 1px solid #003366;
+        border-bottom: 1px solid #003366;
+      }
+      body.dark-mode .section-title {
+        color: #00bfff;
+        text-shadow: 2px 2px 0px rgba(0, 191, 255, 0.25),
+          0 0 10px rgba(0, 191, 255, 0.12);
+      }
+      body.dark-mode .section-title::after {
+        background: linear-gradient(90deg, #003366, #00bfff, #003366);
+      }
+      body.dark-mode .section-subtitle {
+        color: #7ecbff;
+      }
+      body.dark-mode .text-content p {
+        color: #eaf6ff;
+      }
+      body.dark-mode .highlight {
+        color: #00bfff;
+        text-shadow: 0 0 5px rgba(0, 191, 255, 0.18);
+      }
+      body.dark-mode .benefit-card {
+        background: linear-gradient(135deg, #181f2a 0%, #10131a 100%);
+        box-shadow: 0 8px 30px rgba(0, 50, 100, 0.18),
+          inset 0 0 0 1px rgba(0, 191, 255, 0.08);
+      }
+      body.dark-mode .benefit-card h3 {
+        color: #00bfff;
+      }
+      body.dark-mode .benefit-card p {
+        color: #eaf6ff;
+      }
+      body.dark-mode .benefit-icon {
+        background: linear-gradient(45deg, #003366, #00bfff, #003366);
+        color: #eaf6ff;
+        box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3),
+          0 0 30px rgba(0, 120, 255, 0.15);
+      }
+      body.dark-mode .quote-section {
+        background: linear-gradient(
+            45deg,
+            rgba(0, 80, 160, 0.18) 0%,
+            rgba(0, 50, 100, 0.16) 50%,
+            transparent 100%
+          ),
+          #181f2a;
+        border-image: linear-gradient(90deg, #003366, #00bfff, #003366) 1;
+      }
+      body.dark-mode .quote-section::before {
+        color: rgba(0, 191, 255, 0.13);
+      }
+      body.dark-mode .quote-text {
+        color: #00bfff;
+        text-shadow: 2px 2px 4px rgba(0, 191, 255, 0.13);
+      }
+      body.dark-mode .quote-author {
+        color: #7ecbff;
+      }
+      body.dark-mode .footer {
+        background: linear-gradient(135deg, #10131a 0%, #181f2a 100%);
+        color: #00bfff;
+        border-top: 3px solid #003366;
+      }
+      body.dark-mode .footer-title {
+        color: #00bfff;
+      }
+      body.dark-mode .footer-description {
+        color: #eaf6ff;
+      }
+      body.dark-mode .footer-signature {
+        color: #7ecbff;
+        border-top: 1px solid #003366;
+      }
+      body.dark-mode ::selection {
+        background: rgba(0, 191, 255, 0.5);
+        color: #10131a;
+      }
+      body.dark-mode .cta-button {
+        background: linear-gradient(45deg, #003366, #005fa3, #00bfff 80%);
+        color: #eaf6ff;
+        border: 2px solid #005fa3;
+      }
+      body.dark-mode .cta-button:hover {
+        background: linear-gradient(45deg, #005fa3, #00bfff, #003366);
+        color: #00bfff;
+      }
+      body.dark-mode .hero-image div[style*='background'] {
+        background: linear-gradient(
+          135deg,
+          #181f2a 0%,
+          #10131a 100%
+        ) !important;
+        color: #eaf6ff !important;
+      }
+      body.dark-mode .hero-image span {
+        color: #b3e0ff !important;
+      }
+      body.dark-mode #darkModeToggle {
+        color: #eaf6ff;
+      }
     </style>
   </head>
 
@@ -1142,6 +1300,21 @@
             <img src="logo.projeto.jpg" alt="Patins Transformando Vidas Logo" />
             <span class="logo-text">PATINS TRANSFORMANDO VIDAS</span>
           </a>
+          <button
+            id="darkModeToggle"
+            aria-label="Alternar Dark Mode"
+            style="
+              background: none;
+              border: none;
+              cursor: pointer;
+              margin-left: 20px;
+              font-size: 1.6rem;
+              color: #0078ff;
+              transition: color 0.3s;
+            "
+          >
+            <i class="fas fa-moon"></i>
+          </button>
           <div class="menu-toggle">
             <span></span>
             <span></span>
@@ -1421,6 +1594,31 @@
     </footer>
 
     <script>
+      // Dark mode toggle
+      const darkModeToggle = document.getElementById('darkModeToggle')
+      const darkModeIcon = darkModeToggle.querySelector('i')
+      const prefersDark = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches
+      const savedMode = localStorage.getItem('darkMode')
+      if (savedMode === 'dark' || (!savedMode && prefersDark)) {
+        document.body.classList.add('dark-mode')
+        darkModeIcon.classList.remove('fa-moon')
+        darkModeIcon.classList.add('fa-sun')
+      }
+      darkModeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode')
+        const isDark = document.body.classList.contains('dark-mode')
+        localStorage.setItem('darkMode', isDark ? 'dark' : 'light')
+        if (isDark) {
+          darkModeIcon.classList.remove('fa-moon')
+          darkModeIcon.classList.add('fa-sun')
+        } else {
+          darkModeIcon.classList.remove('fa-sun')
+          darkModeIcon.classList.add('fa-moon')
+        }
+      })
+
       // Street-style enhanced functionality
       document.addEventListener('DOMContentLoaded', function () {
         // Mobile menu toggle
